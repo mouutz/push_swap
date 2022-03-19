@@ -34,6 +34,24 @@ Run `make`.
 ./push_swap 1 2 3 4
 ```
 
+* *For 100 numbers*:
+```
+ARG=`ruby -e "puts (0..100).to_a.shuffle.join(' ')"`; ./push_swap $ARG | wc -l
+```
+| 1 point | 2 points | 3 points | 4 points | 5 points |
+|:-------:|:--------:|:--------:|:--------:|:--------:|
+| 1500 | 1300 | 1100 | 900 | 700 |
+| ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+* *For 500 numbers*:
+```
+ARG=`ruby -e "puts (0..100).to_a.shuffle.join(' ')"`; ./push_swap $ARG | wc -l
+```
+| 1 point | 2 points | 3 points | 4 points | 5 points |
+|:-------:|:--------:|:--------:|:--------:|:--------:|
+| 11500 | 10000 | 8500 | 7000 | 5500 |
+| ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+
 ## Visualizer
 
 To use a visualizer like the top gif, refer directly here : https://github.com/o-reo/push_swap_visualizer
